@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Task 2</title>
+    </head>
+    <body>
+	<div class="container" style="text-align: center; margin-top: 2em;">
+            <button onclick="reduceImg()">Уменьшить рисунок</button>
+            <button onclick="increaseImg()">Увеличить рисунок</button>
+            <button onclick="resetImg()">Исходные размеры</button>
+	</div>
+	<div class="container2" style="text-align: center; margin-top: 10em;">
+            <img src="1.png" onclick="enlargeImg()" id="img1">
+	</div>
+
+	<script>
+            img = document.getElementById("img1");
+      
+	    function reduceImg() {
+		img.style.transform = "scale(0.5)";
+		img.style.transition = "transform 0.25s ease";
+            }
+      
+            function increaseImg() {
+		img.style.transform = "scale(1.5)";
+		img.style.transition = "transform 0.25s ease";
+            }
+
+	    function resetImg() {
+		img.style.transform = "scale(1)";
+		img.style.transition = "transform 0.25s ease";
+            }
+	</script>
+    </body>
+</html>
