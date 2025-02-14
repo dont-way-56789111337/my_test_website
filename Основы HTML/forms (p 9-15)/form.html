@@ -1,10 +1,68 @@
 <html>
     <head>
-        <title>Form</title>
+        <title>Forms</title>
     </head>
     <body>
+	<p>Текстовое поле (text field).</p>
         <form>
-            <input name="fio" value="Миша" align="left" size="4" maxlength="45">
+            <input name="fio" value="Никитин Никита Никитич" align="left" size="20" maxlength="35">
         </form>
+	<p><br><br>Текстовая область (text area).</p>
+	<textarea name="внутренние органы" cols="30" rows="5" wrap>
+	    Сердце
+	    Лёгкие
+	    Желудок
+	    Печень
+	    Селезёнка
+	</textarea>
+	<p><br><br>Список.</p>
+	<p>Список с единственным выбором:</p>
+	<select name="months_of_spring" size="/">
+	    <option value="1">Март</option>
+	    <option value="2">Апрель</option>
+	    <option value="3">Май</option>
+	</select>
+	<p><br>Список с множественным выбором:</p>
+	<select name="food" size="4" multiple>
+	    <option value="1" selected>Кофе</option>
+	    <option value="2">Шоколад</option>
+	    <option value="3">Ананас</option>
+	    <option value="4">Шампанское</option>
+	    <option value="5">Мороженое</option>
+	    <option value="6">Шашлык</option>
+	    <option value="7">Хот-дог</option>
+	    <option value="8">Пицца</option>
+	</select>
+	<p><br><br>"Флажок" (Checkbox).</p>
+	<p>Укажите Ваши навыки:</p>
+	<input type="checkbox" name="skill" value="1" checked>Html
+	<input type="checkbox" name="skill" value="2">JS
+	<input type="checkbox" name="skill" value="3">APS
+	<input type="checkbox" name="skill" value="4">Perl
+	<input type="checkbox" name="skill" value="5">PHP
+	<input type="checkbox" name="skill" value="6">XML
+	<input type="checkbox" name="skill" value="7">FLASH
+	<p><br><br>"Радиокнопка" (Radiobutton).</p>
+	<p>Укажите Ваши навыки:</p>
+	<input type="radio" name="skill" value="1" checked>Html
+	<input type="radio" name="skill" value="2">JS
+	<input type="radio" name="skill" value="3">APS
+	<input type="radio" name="skill" value="4">Perl
+	<input type="radio" name="skill" value="5">PHP
+	<input type="radio" name="skill" value="6">XML
+	<input type="radio" name="skill" value="7">FLASH
+	<p><br><br>Кнопка (button).</p>
+	<input type="submit" name="subm" value="Отправить данные">
+	<input type="reset" name="res" value="Отменить ввод">
+	<p></p>
+	<button style="width:150">
+	    <img src="1.png" width=118>
+	</button>
+	<p><br><br>Поле для ввода пароля (password).</p>
+	<input type="password" value="1234" size="4" maxlength="8">
+	<p><br><br>Скрытое поле (hidden).</p>
+	<input type="hidden" value="123">
+	<p><br><br>Прикрепление файлов.</p>
+	<input type="file" size="50" accept="text/plain, text/html, video/x-msvideo, image/x-portablebitmap">
     </body>
 </html>
